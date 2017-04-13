@@ -326,7 +326,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_cdma_sub=0
+    ro.telephony.default_cdma_sub=0 \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    security.perf_harden=0
 
 # LTE, CDMA, GSM/WCDMA
 PRODUCT_PROPERTY_OVERRIDES += \
